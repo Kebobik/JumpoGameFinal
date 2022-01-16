@@ -57,11 +57,12 @@ public class PlayerMovement : MonoBehaviour
         }
         else 
         { 
-            if(numberOfJumps == 1 )
-                playerRB.velocity = new Vector2(playerRB.velocity.x, jumpforce);
-                numberOfJumps++;
-                  AudioManager.instance.Play("SecondJump");
+            if(numberOfJumps == 1 )   
+            playerRB.velocity = new Vector2(playerRB.velocity.x, jumpforce);  
+            numberOfJumps++;
+            AudioManager.instance.Play("SecondJump"); 
+            
         }
-       
+              
     }
 }
